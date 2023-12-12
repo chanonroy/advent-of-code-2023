@@ -8,15 +8,7 @@ Minitest::Reporters.use! [Minitest::Reporters::DefaultReporter.new(color: true)]
 
 # Dec 1
 class One < Minitest::Test
-  def setup
-    @calculator = 1
-  end
-
-  def test_addition
-    assert_equal 1, @calculator, 'Calculator should be initialized to 1'
-  end
-
-  def test_addition2
-    assert_equal 1, @calculator, 'Calculator should be initialized to 1'
+  def test
+    assert_equal 54_708, calibration_document_sum('1.txt')
   end
 end
