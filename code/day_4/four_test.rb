@@ -2,13 +2,13 @@
 
 require 'minitest/autorun'
 require 'minitest/reporters'
-require_relative 'one'
+require_relative 'four'
 
 Minitest::Reporters.use! [Minitest::Reporters::DefaultReporter.new(color: true)]
 
-# Dec 1
-class One < Minitest::Test
-  def test_day_one
-    assert_equal 54_708, calibration_document_sum('input.txt')
+# Dec 4
+class Four < Minitest::Test
+  def test_day_four_sample
+    assert_equal 13, day_four('sample.txt')
   end
 end
