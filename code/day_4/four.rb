@@ -31,5 +31,3 @@ def day_four(path)
   end
   sum
 end
-
-calibration_document_sum('sample.txt')
