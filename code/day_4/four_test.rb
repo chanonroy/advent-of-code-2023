@@ -11,4 +11,7 @@ class Four < Minitest::Test
   def test_day_four_sample
     assert_equal 13, day_four('sample.txt')
   end
+  def test_day_four_real
+    assert_equal 21213, day_four('real.txt')
+  end
 end
